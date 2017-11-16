@@ -38,7 +38,7 @@ end
 def cleanup(browser)
   case browser
   when 'chrome'
-    `rm -rf "#{Dir.home}/Library/Caches/Google/Chrome/Default/Cache/"`
+    `rm -rf "#{Dir.home}/Library/Caches/Google/Chrome/Default/"`
     `rm -rf "#{Dir.home}/Library/Application Support/Google/Chrome/"`
   when 'firefox'
     `rm -rf "#{Dir.home}/Library/Application Support/Firefox"`
